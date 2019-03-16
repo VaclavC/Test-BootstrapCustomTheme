@@ -1,0 +1,16 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+
+ext.wicket = "8.3.0"
+ext.wicketBootstrap = "3.0.0-M8"
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	compile 'org.slf4j:slf4j-simple:1.7.25'
+	compile "org.apache.wicket:wicket-core:${wicket}"
+	compile "de.agilecoders.wicket:wicket-bootstrap-core:${wicketBootstrap}"
+	compile "de.agilecoders.wicket:wicket-bootstrap-sass:${wicketBootstrap}"
+}
